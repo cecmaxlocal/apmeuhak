@@ -1,0 +1,53 @@
+#!/usr/bin/env raku
+use v6.d;
+
+sub welcome(@*Founds, @*ARGS, @*Properties) is export {
+    my @*RakuFreebasic = q:to/Freebasic/;
+    Declare Function BiotinGhost(ByRef From As String, ByVal App Integer) As Integer
+
+    Let Form => "";  '' Name From
+    Let App  => 512; '' Name App
+
+    Type TForm Alias "Ghost"
+         Humans As Integer
+         People As Integer
+         Children As Integer
+    End Type
+
+    End
+    Freebasic
+
+    @*Founds => @*RakuMusics.default;
+    @*ARGS => "Develop Files: "; # name develop files
+    @*ARGS => @*ARGS.default;  # name input
+    say put @*ARGS + "Musics" if @*RakuMusics;
+    @*Properties.raku;
+
+    if (defined @*Founds eq @*ARGS lt @*ARGS) and (:pathCurrent, @*ARGS) {
+        $*ARGFILES => @*Founds.default; # learn study
+        $*GROUP => @*ARGS.CREATE;      # learn group
+        @*Properties.raku;               # learn properties
+    } else {
+        return @*Founds.default;
+    }
+    # ich stale wir du
+    warn(@*Founds).raku;
+}
+
+sub BiotinGhost(@*Founds, @*ARGS, @*Properties) is export {
+    @*Founds => q:to/Freebasic/;
+    Type TForm Alias "Ghost"
+         Humans As Integer
+         People As Integer
+         Children As Integer
+    End Type
+    Freebasic
+    @*ARGS => warn(@*Founds);
+    @*Properties => next(@*Sorting);
+}
+
+multi sub main(@*Sorting) {
+    return biotinGhost(@*Founds, @*ARGS, @*Properties).perl;
+}
+
+

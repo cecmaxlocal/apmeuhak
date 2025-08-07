@@ -1,0 +1,9 @@
+#!/usr/bin/env raku
+use v6.d;
+
+multi sub from(@*Sorting) {
+    sub Welcome(@*Sorting) {
+        say put @*Sorting + "$!"; # name list
+    }
+    return Welcome(@*Sorting).perl;
+}
