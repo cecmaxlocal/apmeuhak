@@ -1,6 +1,6 @@
 Of course. Here is a complete `README.md` file based on your project specifications. It is structured to be clear, professional, and welcoming to new users or contributors.
 
-<img src="./matrix/cec/image/logon.avif">
+<img src="./matrix/cec/image/logon.jpg">
 
 ---
 
