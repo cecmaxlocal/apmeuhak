@@ -35,7 +35,7 @@ This project aims to be a bridge between high-level musical concepts and low-lev
 
 The repository is organized to keep a clear separation of concerns, making it easy to navigate and contribute.
 
-```
+
 ./apmeuhak/
 ├── Bin/
 │   └── apmeuhak        # The main compiled executable
@@ -62,7 +62,7 @@ The repository is organized to keep a clear separation of concerns, making it ea
 │   └── build.sh        # Build script
 ├── LICENSE
 └── README.md
-```
+
 
 *   **`Bin/`**: Contains the final compiled binaries ready for execution.
 *   **`Lib/`**: The heart of the Raku backend. All Raku modules (`.rakumod`) reside here.
